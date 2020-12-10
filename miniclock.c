@@ -17,6 +17,7 @@ int main() {
 		}
 	}
 	
+	printf("Separate hours, minutes, and seconds with spaces\n");
 	printf("Set Time (%d hour clock): ", mode);  //Set time
 	scanf("%d %d %d", &h, &m, &s);
 	if(mode == 24 && h > 23) {		//Check hours (24)
