@@ -10,11 +10,9 @@ int main() {
 	printf("Select 12hr/24hr: ");
 	scanf("%d", &mode);
 	
-	if(mode != 12) {	//Checks whether mode is set to either 12 or 24 hour clock
-		if(mode != 24) {
-			printf("ERROR: Invalid clock\n");
-			return 0;
-		}
+	if(mode != 12 && mode != 24) {	//Checks whether mode is set to either 12 or 24 hour clock
+		printf("ERROR: Invalid clock\n");
+		return 0;
 	}
 	
 	printf("Separate hours, minutes, and seconds with spaces\n");
